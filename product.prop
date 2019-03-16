@@ -27,6 +27,7 @@ persist.vendor.data.profile_update=true
 
 # Graphics
 debug.sf.latch_unsignaled=0
+debug.cpurend.vsync=false
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
