@@ -184,7 +184,8 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    VioletParts
 
 # Display/Graphics
 PRODUCT_PACKAGES += \
@@ -450,6 +451,11 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     com.android.vndk.current.on_vendor
+
+#VioletParts init
+PRODUCT_PACKAGES += \
+    init.violetparts.sh \
+    init.violetparts.rc
 
 # Wifi
 PRODUCT_PACKAGES += \
