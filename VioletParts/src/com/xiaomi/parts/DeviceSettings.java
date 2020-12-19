@@ -32,6 +32,7 @@ import android.util.Log;
 
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
 import com.xiaomi.parts.speaker.ClearSpeakerActivity;
+import com.xiaomi.parts.preferences.VibratorStrengthPreference;
 import com.xiaomi.parts.preferences.CustomSeekBarPreference;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
@@ -59,6 +60,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
+
     private Preference mKcal;
     private SecureSettingSwitchPreference mFastcharge;
     private SwitchPreference mSelinuxMode;
@@ -68,8 +70,8 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
-    
     private static Context mContext;
+    private VibratorStrengthPreference mVibratorStrength;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -86,6 +88,11 @@ public class DeviceSettings extends PreferenceFragment implements
             startActivity(intent);
             return true;
         });
+
+        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
+        if (mVibratorStrength != null) {
+            mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
+        }
 
         boolean enhancerEnabled;
         try {
@@ -136,6 +143,7 @@ public class DeviceSettings extends PreferenceFragment implements
         mSelinuxPersistence.setChecked(getContext()
         .getSharedPreferences("selinux_pref", Context.MODE_PRIVATE)
         .contains(PREF_SELINUX_MODE));
+
     }
 
 
@@ -191,6 +199,7 @@ public class DeviceSettings extends PreferenceFragment implements
                     this.getContext().stopService(fpsinfo);
                 }
                 break;
+
 
             default:
                 break;
