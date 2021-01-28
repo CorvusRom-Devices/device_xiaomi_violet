@@ -423,18 +423,18 @@ vendor/lib64/vendor.qti.latency@2.0.so|c4de1ba004bd8d07dbe92f58abb6250c7bbaf968
 # ConfigStore - from LA.UM.8.9.r1-04400-SM6xx.0
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|24570881d071aa886cd319f259ffacd31c126016
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|f79299c53af073321c00eddcfa8146c989143419
--vendor/lib64/libplatformconfig.so|fe9287475c804a5a8bd2f9ee786df3b84df2a9a4
--vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|3a3e63810b8d9785bb21536ba65f99a5dbfe54cd
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|359a5011f52dd9f606071837555fc473a94c7143
--vendor/lib/libplatformconfig.so|99f3422d2d09e65615589407cb380797519df363
--vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|f1b8eba16662ef3548b11e263ee75082469ac692
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a99915765fca7add8de87d7c4ef9bf031e155
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|3e517ec6b4603c6c1f5945b3f131aa69bccb0b08
 
-# Consumer IR - from violet-user 10 QKQ1.190915.002 20.7.16 release-keys
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so|aa6be20e7901ac5de77cbf364d542f163532ccf7
+# Consumer IR
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
 
-# DPM - from LA.UM.9.1.r1-06700-SMxxx0.0
-framework/tcmclient.jar|22858e8bb7e3f956e487dc6764ad8250f118d7ac
+# Dirac - from Xiaomi
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+
+# DPM - from davinci-user 11 RKQ1.200826.002 20.12.26 release-keys
 system_ext/bin/dpmd|bc22fa258f3975744e248dc7d9f26a00a9981ca7
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
