@@ -75,7 +75,7 @@
 
         <Preference
             android:key="device_kcal"
-            android:persistent="false"
+            android:persistent="true"
             android:icon="@drawable/ic_kcal"
             android:title="@string/device_kcal_title"
             android:summary="@string/kcal_enabled_summary">
