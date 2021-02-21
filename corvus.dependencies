@@ -18,9 +18,9 @@
     "remote"     : "github"
   },
   {
-    "repository" : "PixysOS-Devices/vendor_xiaomi_violet",
+    "repository" : "fosslover/vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi",
-    "branch"     : "eleven",
+    "branch"     : "11",
     "remote"     : "gitlab"
   }
 ]
