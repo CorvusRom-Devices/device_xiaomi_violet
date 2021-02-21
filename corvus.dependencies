@@ -8,7 +8,7 @@
   {
     "repository" : "karthik558/MsM-4.14-SmoothAF",
     "target_path": "kernel/xiaomi/sm6150",
-    "branch"     : "ten",
+    "branch"     : "eleven",
     "remote"     : "github"
   },
   { 
