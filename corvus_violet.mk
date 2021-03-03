@@ -7,7 +7,7 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common PixysOS stuff.
+# Inherit some common CorvusOS stuff.
 $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
