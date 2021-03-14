@@ -58,8 +58,8 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
-TARGET_KERNEL_CONFIG := vendor/lineage_violet_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
+TARGET_KERNEL_CONFIG :=  vendor/violet-perf_defconfig
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Platform
