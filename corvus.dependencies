@@ -6,9 +6,9 @@
     "remote"     : "github"
   },
   {
-    "repository" : "karthik558/MsM-4.14-RyZeN-",
+    "repository" : "karthik558/MsM-4.14-SmoothAF",
     "target_path": "kernel/xiaomi/sm6150",
-    "branch"     : "R",
+    "branch"     : "eleven",
     "remote"     : "github"
   },
   { 
