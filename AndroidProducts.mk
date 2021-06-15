@@ -6,8 +6,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_violet.mk
+    $(LOCAL_DIR)/corvus_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    legion_violet-userdebug \
-    legion_violet-user
+    corvus_violet-userdebug \
+    corvus_violet-user

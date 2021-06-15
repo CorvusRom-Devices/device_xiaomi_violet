@@ -8,14 +8,14 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common LegionOS stuff.
-$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+# Inherit some common CorvusOS stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
 IS_PHONE := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := legion_violet
+PRODUCT_NAME := corvus_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -25,3 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="violet"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Corvus Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.corvus.maintainer= Tamizh Arasan
