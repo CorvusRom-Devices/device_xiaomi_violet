@@ -489,6 +489,9 @@ on property:persist.vendor.ssr.enable_ramdumps=1 && property:ro.boot.mode!=charg
 on property:sys.boot_completed=1
     setprop vendor.setup.power 1
 
+    # USB Fast Charge
+    write /sys/kernel/fast_charge/force_fast_charge 1
+
     # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
@@ -564,11 +567,6 @@ service remosaic_daemon /vendor/bin/remosaic_daemon
    class late_start
    user camera
    group camera
-
-    # USB Fast Charge
-    write /sys/kernel/fast_charge/force_fast_charge 1
-
-    start vendor.qcom-post-boot
 
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
