@@ -1,0 +1,14 @@
+[
+  {
+    "repository" : "fosslover/vendor_xiaomi_violet",
+    "target_path": "vendor/xiaomi/violet",
+    "branch": "11",
+    "remote": "gitlab"
+  },
+  {
+    "repository": "no1opensourcelover/kernel_xiaomi_violet-nigandu",
+    "target_path": "kernel/xiaomi/violet",
+    "branch":"tamizh",
+    "remote":"github"
+  }
+]
