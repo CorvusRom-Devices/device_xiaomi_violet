@@ -334,8 +334,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay \
-    NotchBarKiller
+    NoCutoutOverlay
 
 # Perf
 PRODUCT_PACKAGES += \
