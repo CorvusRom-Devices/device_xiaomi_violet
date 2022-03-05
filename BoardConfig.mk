@@ -9,6 +9,7 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/violet
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
