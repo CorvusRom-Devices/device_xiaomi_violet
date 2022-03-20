@@ -164,10 +164,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
