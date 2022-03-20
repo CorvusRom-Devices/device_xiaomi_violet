@@ -146,7 +146,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libdng_sdk.vendor \
-    libgui_vendor \
     libxml2 \
     CameraGo \
     vendor.qti.hardware.camera.device@1.0.vendor
