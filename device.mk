@@ -295,6 +295,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sm6150
 
+# Logs
+PRODUCT_PACKAGES += \
+    init.logcat.rc
+
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
