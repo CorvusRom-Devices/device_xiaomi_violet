@@ -19,7 +19,7 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-corvus
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -200,9 +200,6 @@ PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
-
-# Firmware
-$(call inherit-product, vendor/xiaomi-firmware/violet/firmware.mk)
 
 # Framework detect
 PRODUCT_PACKAGES += \
