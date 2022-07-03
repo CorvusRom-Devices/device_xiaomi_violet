@@ -6,15 +6,15 @@
     "remote": "gitlab"
   },
   {
-    "repository": "kernel_xiaomi_violet",
+    "repository": "SuperiorOS-Devices/kernel_xiaomi_violet",
     "target_path": "kernel/xiaomi/violet",
     "branch":"twelve",
-    "remote":"pixel-devices"
+    "remote":"github"
   },
   {
-    "repository"  : "device_xiaomi_sm6150-extras",
+    "repository"  : "PixelExperience-Devices/device_xiaomi_sm6150-extras",
     "target_path" : "device/xiaomi/sm6150-extras",
-    "remote"      : "pixel-devices",
-    "branch"      : "twelve"
+    "branch"      : "twelve",
+    "remote"      : "github"
   }
 ]
